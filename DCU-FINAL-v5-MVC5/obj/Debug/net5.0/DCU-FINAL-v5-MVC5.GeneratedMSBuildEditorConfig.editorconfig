@@ -1,0 +1,11 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DCU_FINAL_v5_MVC5
+build_property.ProjectDir = C:\Users\Usuario\Pictures\practica Cursos\Cuatrimestre 4\Diseño Centrado en el usuario\Proyecto final\DCU-FINAL-v5-MVC5\DCU-FINAL-v5-MVC5\

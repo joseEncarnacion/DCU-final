@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\DCU-FINAL-v5-MVC5.props" />
+</Project>
