@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K0XfSSdLkfjg7ieJiL2VfAfsb0TVvT62yuV+uJ6PkwrrwdKoZ6ZpvMubzs1GdC/s6MOYJnmEY81r9AMVkt7wUg==",
+  "dgSpecHash": "ZGbTXkovBy7zBJhOBuWpj1HeliT707jn3dIyDjzKdXtm+DSMmKD6ZXeZE17S24iRgvYeYNqXuRosA3LazqV04w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Pictures\\practica Cursos\\Cuatrimestre 4\\Diseño Centrado en el usuario\\Proyecto final\\DCU-FINAL-v5-MVC5\\DCU-FINAL-v5-MVC5\\DCU-FINAL-v5-MVC5.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\proyectoFinales\\DCU-final\\DCU-FINAL-v5-MVC5\\DCU-FINAL-v5-MVC5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.14\\microsoft.aspnetcore.mvc.razor.extensions.5.0.14.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.14\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.14.nupkg.sha512",
