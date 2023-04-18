@@ -28,6 +28,11 @@ namespace DCU_FINAL_v5_MVC5.Controllers
             return View();
         }
 
+        public IActionResult Cursos()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
