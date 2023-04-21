@@ -1,8 +1,65 @@
-﻿@{
+﻿@model DCU_FINAL_v5_MVC5.Models.EntityEstuditiante
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<section class=" " >
+    <div class="row ">
+        <h2>@ViewBag.Message</h2>
+
+        <div class="col col-8  offset-md-2 my-3 my-md-5 align-items-center  jumbotron ">
+
+            <div class="text-center">
+                <h2>Registro de estudiantes</h2>
+            </div>
+
+            @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+            {
+                <div class="form-group">
+                    @Html.LabelFor(m=>m.nombre, "Nombre")
+                    @Html.TextBoxFor(m=>m.nombre, new{@class="form-control", placeholder ="Inserte Un nombre" })
+
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m=>m.correo, "correo")
+                    @Html.TextBoxFor(m=>m.correo, new{@class="form-control", placeholder ="correo@email.com", type = "email" })
+
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m=>m.telefono, "telefono")
+                    @Html.TextBoxFor(m=>m.telefono, new{@class="form-control", placeholder ="809-564-9874", type = "tel"})
+                </div>
+                <div class="form-group">
+                     @Html.LabelFor(m=>m.Foto, "Imagenes")
+                    @Html.TextBoxFor(m=>m.Foto, new{@class="form-control", placeholder ="Inserte una foto" })``
+                </div>
+
+                <input type="submit" class="btn btn-primary btn-lg" value="Registrar" />
+            }
+            <!--
+            <form class="col col-md-10" action="post">
+
+                <div class="form-group">
+                    <label aria-label="Nombre" for="insertatImagen" class="col-form-label">Imagen</label>
+                    <input type="file" class="form-control" placeholder="Inserte una imagen" name="image" />
+                </div>
+                <div class="form-group">
+                    <label aria-label="Nombre" for="inputNombre" class="col-form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Inserte su nombre" name="nombre" />
+                </div>
+                <div class="form-group">
+                     <label aria-label="correo" for="inputCorreo" class="col-form-label">Correo</label>
+                     <input type="email" class="form-control" placeholder="correo@Myemail.com" name="correo" />
+                </div>
+                <div class="form-group">
+                    <label aria-label="Telefono" for="inputTelefono" class="col-form-label">Telefono</label>
+                    <input type="tel" class="form-control" placeholder="(809)5538877" name="correo" />
+                </div>
+
+                <input type="submit" class="btn btn-primary btn-lg" value="Registrar" />
+           </form>
+        -->
+       </div>
+    </div>
+</section>

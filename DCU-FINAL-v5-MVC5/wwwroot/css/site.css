@@ -5,11 +5,13 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  
 }
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #0366d6;
+    
 }
 
 .btn-primary {
@@ -61,6 +63,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: #eeee;
 }
 .footer {
   position: absolute;
@@ -69,3 +72,51 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+/*estilos propios*/
+
+hr{
+    width:100%;
+    border-style:solid;
+    border-width:1px;
+
+}
+
+.header{
+  
+    max-height:500px;
+   background-color:white;
+    max-width:100%;
+    width:100%;
+    margin: 0, auto;
+    
+  
+    
+}
+
+a {
+    color: #fff;
+}
+
+.form-8{
+    
+    padding: 2rem 1.5rem;
+}
+
+form label{
+    line-height: 1;
+    font-size: 18px;
+}
+
+
+
+.genericallFom{
+    display:flex;
+    justify-content:center;
+    align-content:center
+}
+
+
+
+
