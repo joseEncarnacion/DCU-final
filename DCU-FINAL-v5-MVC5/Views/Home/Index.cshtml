@@ -1,81 +1,65 @@
-﻿@{
+﻿@model DCU_FINAL_v5_MVC5.Models.EntityEstuditiante
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container">
-  
-    <!--Header-->
-    <hr />
 
-    <main class="row">
+<section class=" " >
+    <div class="row ">
+        <h2>@ViewBag.Message</h2>
 
-        <section class="col-12  text-center my-2 my-md-4">
-                <h3>¿Que puedo aprender en <span>estudiantes tic RD?</span></h3>
+        <div class="col col-8  offset-md-2 my-3 my-md-5 align-items-center  jumbotron ">
 
-                <p>
-                    El lugar ideal para darle sentido a tu aprendizaje, ven y accede a
-                    la comunidad mas grande y talentosa del pais
-                </p>
-
-
-            <div class="container my-2 py-4 ">
-                <div class="card row flex-row-reverse d-flex justify-content-center align-items-center">
-                    <img class="col-lg-4 card-img-end img-fluid p-0" src="./imagenes/tic.jpg" alt="estudiantes tic" />
-                    <div class="col-lg-8 card-body flex-column">
-                        <h5 class="card-title">Nuestros cursos estan enfocados al area de Tecnologia de la informacion</h5>
-
-                        <p class="card-text">Podras encontrar una serieilimitada de contenido.</p>
-                        <a href="#" class="btn btn-primary">Ver cursos</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="">
-
-            <div class="py-3 py-md-5 text-center">
-                <h3>Elige el area que mas te <span class="text-danger "> apasiona </span></h3>
-            </div>
-            
-
-            <div class="card-deck">
-                <div class="card">
-                    <img class="card-img-top p-2" src="../imagenes/dev.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo de software</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted"></small></p>
-                        <button class="btn btn-outline-primary btn-lg">Mas información</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top p-2" src="../imagenes/db.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Base de datos</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p class="card-text"><small class="text-muted"></small></p>
-                        <button class="btn btn-outline-primary btn-lg">Mas información</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top p-2" src="../imagenes/dweb.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Diseño Digital</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p class="card-text"><small class="text-muted">  </small></p>
-                        <button class="btn btn-outline-primary btn-lg">Mas información</button>
-                    </div>
-                </div>
+            <div class="text-center">
+                <h2>Registro de estudiantes</h2>
             </div>
 
+            @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+            {
+                <div class="form-group">
+                    @Html.LabelFor(m=>m.nombre, "Nombre")
+                    @Html.TextBoxFor(m=>m.nombre, new{@class="form-control", placeholder ="Inserte Un nombre" })
 
-                
-            
-        </section>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m=>m.correo, "correo")
+                    @Html.TextBoxFor(m=>m.correo, new{@class="form-control", placeholder ="correo@email.com", type = "email" })
 
-        
-    </main>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(m=>m.telefono, "telefono")
+                    @Html.TextBoxFor(m=>m.telefono, new{@class="form-control", placeholder ="809-564-9874", type = "tel"})
+                </div>
+                <div class="form-group">
+                     @Html.LabelFor(m=>m.Foto, "Imagenes")
+                    @Html.TextBoxFor(m=>m.Foto, new{@class="form-control", placeholder ="Inserte una foto" })``
+                </div>
 
+                <input type="submit" class="btn btn-primary btn-lg" value="Registrar" />
+            }
+            <!--
+            <form class="col col-md-10" action="post">
 
+                <div class="form-group">
+                    <label aria-label="Nombre" for="insertatImagen" class="col-form-label">Imagen</label>
+                    <input type="file" class="form-control" placeholder="Inserte una imagen" name="image" />
+                </div>
+                <div class="form-group">
+                    <label aria-label="Nombre" for="inputNombre" class="col-form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Inserte su nombre" name="nombre" />
+                </div>
+                <div class="form-group">
+                     <label aria-label="correo" for="inputCorreo" class="col-form-label">Correo</label>
+                     <input type="email" class="form-control" placeholder="correo@Myemail.com" name="correo" />
+                </div>
+                <div class="form-group">
+                    <label aria-label="Telefono" for="inputTelefono" class="col-form-label">Telefono</label>
+                    <input type="tel" class="form-control" placeholder="(809)5538877" name="correo" />
+                </div>
 
-</div>
+                <input type="submit" class="btn btn-primary btn-lg" value="Registrar" />
+           </form>
+        -->
+       </div>
+    </div>
+</section>

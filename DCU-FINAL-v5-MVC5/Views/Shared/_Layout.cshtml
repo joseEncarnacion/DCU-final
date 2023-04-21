@@ -23,17 +23,13 @@
                             <a class="nav-link text-light text-white" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Nosotros</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="ListaEst">lista</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Cursos">Cursos</a>
-                        </li>
+                       
                     </ul>
                 </div>
-                <button class="btn btn-outline-light bnt-lg mx-2 " asp-area="" asp-controller="Home" asp-action="Index">Iniciar sesión</button>
-                <button class="btn btn-danger bnt-lg" asp-area="" asp-controller="Home" asp-action="Index">Registrarse</button>
-
+              
             </div>
         </nav>
 
@@ -41,20 +37,31 @@
         <hr />
 
     </header>
+    
     <div class="container">
+       
+        
         <section>
-            <div class="card bg-dark">
-                <img class="card-img img-fluid header" src="/imagenes/Header.png" alt="Card image">
-            <div class="card-img-overlay col-lg-4 ">
-                    <h5 class="card-title text-primary">empoderarte para mejorar tus habilidades</h5>
-                    <p class="card-text">En la comunidad estudiantes Tic rd tienes la oportunidad de incrementar tus el manejo de tus habilidades.</p>
-                    <!--<p class="card-text"> <button class="btn btn-danger btn-lg text-white" action="#">Registrate</button></p>
+            <!--
+                botones del nava              <button class="btn btn-outline-light bnt-lg mx-2 " asp-area="" asp-controller="Home" asp-action="Index">Iniciar sesión</button>
+                <button class="btn btn-danger bnt-lg" asp-area="" asp-controller="Home" asp-action="Index">Registrarse</button>
 
-                    -->
-         </div>
-                <button class="btn btn-danger btn-lg text-white" action="#">Registrate</button>
-        </div>
+            <div class="card bg-dark">
+                    <img class="card-img img-fluid header" src="/imagenes/Header.png" alt="Card image">
+                <div class="card-img-overlay col-lg-4 ">
+                        <h5 class="card-title text-primary">empoderarte para mejorar tus habilidades</h5>
+                        <p class="card-text">En la comunidad estudiantes Tic rd tienes la oportunidad de incrementar tus el manejo de tus habilidades.</p>
+                        <p class="card-text"> <button class="btn btn-danger btn-lg text-white" action="#">Registrate</button></p>
+
+                    
+                </div>
+                    <button class="btn btn-danger btn-lg text-white" action="#">Registrate</button>
+            </div>
+            -->
         </section>
+
+   
+
         <main role="main" class="pb-3">
             @RenderBody()
             
@@ -66,6 +73,9 @@
             &copy; 2023 - DCU_FINAL_v5_MVC5 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
+   
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

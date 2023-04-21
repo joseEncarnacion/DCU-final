@@ -99,6 +99,24 @@ a {
     color: #fff;
 }
 
+.form-8{
+    
+    padding: 2rem 1.5rem;
+}
+
+form label{
+    line-height: 1;
+    font-size: 18px;
+}
+
+
+
+.genericallFom{
+    display:flex;
+    justify-content:center;
+    align-content:center
+}
+
 
 
 

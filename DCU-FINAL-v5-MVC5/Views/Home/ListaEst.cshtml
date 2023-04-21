@@ -1,0 +1,58 @@
+﻿@model IEnumerable<DCU_FINAL_v5_MVC5.Models.EntityEstuditiante>
+
+
+@{
+    ViewData["Title"] = "ListaEst";
+}
+
+
+
+<!--row-cols-md-3 style="width: 18rem;-->
+
+<div class="text-center">
+    <h1>Administracion de estudiantes</h1>
+</div>
+
+<section class="row">
+    <div class="col col-10 col-md-5 py-3 my-3 my-md-5 py-md-4">
+    
+
+        <form class="d-flex" role="search">
+           <!-- <input class="form-control me-2" type="search" name="search" id="searchID" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" id="buronS">buscar</button> -->
+        <input class="form-control me-2" type="search" name="search" id="searchID" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" id="buronS">buscar</button>
+        </form>
+
+   </div>
+</section>
+
+
+<section class="row">
+
+    <div class="card-group">
+
+        @foreach (var info in Model)
+        {
+            <div class="col-10 col-md-6 col-lg-4">
+           
+                <div class="card">
+                    <img class="card-img-top" src=@info.Foto alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">ID# @info.idEstudiante</p>
+                        <h5 class="card-title">@info.nombre</h5>
+                        <p class="card-text">@info.correo</p>
+                        <p class="card-text"> @info.telefono</p>
+                        <a href="#" class="btn btn-primary">Editar Informacion</a>
+                    </div>
+        
+                </div>
+            </div>
+
+      
+        }
+    </div>
+
+   
+
+</section>
